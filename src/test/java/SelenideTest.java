@@ -23,7 +23,6 @@ public class SelenideTest {
         SelenideLogger.addListener("allure", new AllureSelenide());
         open("https://github.com");
 
-
         $x("//button[@data-action='click:qbsearch-input#handleExpand']").click();
         $x("//input[@id='query-builder-test']").sendKeys("lazval/qaGuru-Allure");
         $x("//input[@id='query-builder-test']").submit();
